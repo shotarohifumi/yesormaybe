@@ -27,6 +27,7 @@ footer {
   left: 0;
 }
 
+<<<<<<< HEAD
 main {
   width: 100%;
   height: 80vh;
@@ -59,6 +60,8 @@ section .main_right {
 
 .yesorno {
 =======
+=======
+>>>>>>> 5274299301e1481194cc350f9f64f7c58dd905ac
 main .yesorno {
 >>>>>>> 66678bbae23e922d5f26f63f58e7be04e1a9e512
   background-repeat: no-repeat;
@@ -78,8 +81,9 @@ main .yesorno {
 }
 main section {
   width: 95%;
-  height: 80vh;
+  height: 100vh;
   margin: 0 auto;
+  padding: 10vh 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,7 +113,8 @@ main section .main_center .btn span {
   justify-content: center;
   font-size: 1.2em;
 }
-main section .main_left, main section .main_right {
+main section .main_left,
+main section .main_right {
   width: 15%;
 }
 main section .main_left {
