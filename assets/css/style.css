@@ -1,1 +1,24 @@
-/*# sourceMappingURL=style.css.map */
+.image {
+  border: 1px solid black;
+  width: 10px;
+  height: 10px;
+}
+
+.yesorno {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yesorno p {
+  font-size: 120px;
+  color: white;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
