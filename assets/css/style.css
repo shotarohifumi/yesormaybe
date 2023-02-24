@@ -32,7 +32,8 @@ section .main_center .btn {
 section .main_center .btn img {
   width: 20%;
 }
-section .main_left, section .main_right {
+section .main_left,
+section .main_right {
   width: 15%;
 }
 
