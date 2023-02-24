@@ -1,20 +1,50 @@
+* {
+  border: 1px solid rgb(202, 202, 202);
+  box-sizing: border-box;
+}
+
 .image {
   border: 1px solid black;
   width: 10px;
   height: 10px;
 }
 
+main {
+  width: 100%;
+}
+
+section {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+section .main_center {
+  width: 70%;
+}
+section .main_center .btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5%;
+}
+section .main_center .btn img {
+  width: 20%;
+}
+section .main_left, section .main_right {
+  width: 15%;
+}
+
 .yesorno {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.yesorno p {
   font-size: 120px;
   color: white;
   opacity: 0.5;
