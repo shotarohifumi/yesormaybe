@@ -9,59 +9,103 @@
     height: 10px;
 }
 
+header{
+    height: 10vh;
+    width: 100%;
+    background-color:#FF5722 ;
+    // position: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+footer{
+    height: 10vh;
+    width: 100%;
+    background-color:#FF5722 ;
+    // position: fixed;
+    position: fixed;
+   bottom: 0;
+    left: 0;
+
+}
 main {
     width: 100%;
-}
+    height: 80vh;
+    
+    .yesorno {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        // イエスかノーの文字
+        font-size: 120px;
+        color: white;
+        opacity: 0.5;
+        text-transform: uppercase;
+        margin: 0 auto;
+        text-align: center;
+    }
+
 
 section {
-    width: 80%;
-    height: 100%;
+    width: 95%;
+    height: 80vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .main_center {
-        width: 70%;
+        width: 65%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
 
 
         .btn {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            gap: 5%;
+            // gap: 5%;
+            
 
             img {
-                width: 20%;
+                width: 10%;
+                height: auto;
+                cursor: pointer;
+                padding: 1%;
 
+            }
+            span{
+                display: flex;
+                width: 20%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2em;
+                
+                
+                
             }
         }
     }
     .main_left,.main_right{
         width: 15%;
     }
+    .main_left{
+        display: flex;
+        writing-mode: vertical-rl;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 100%;
+    }
 }
 
-.yesorno {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    // イエスかノーの文字
-    font-size: 120px;
-    color: white;
-    opacity: 0.5;
-    text-transform: uppercase;
-    margin: 0 auto;
-    text-align: center;
-
-    // button {
-    //     // align-items: end;
-    //     // justify-content: end
-    // }
 
 }
