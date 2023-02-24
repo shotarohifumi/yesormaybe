@@ -24,7 +24,7 @@ $(function () {
 				$("p").animate({ "opacity": "1" },)
 				$(".yesorno").append(`<button>${response.answer}</button>`)
 
-
+				
 
 
 				// })
@@ -33,6 +33,9 @@ $(function () {
 			.fail(function (xhr) {
 				//通信失敗時の処理
 				//失敗したときに実行したいスクリプトを記載
+				setTimeout(() => {
+					
+				}, 3000);
 			})
 			.always(function (xhr, msg) {
 				//通信完了時の処理
