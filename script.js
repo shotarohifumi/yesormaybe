@@ -1,5 +1,5 @@
 $(function () {
-    $(".image").on("click", function () {
+    $(".btn").on("click", function () {
 
 
         $.ajax({

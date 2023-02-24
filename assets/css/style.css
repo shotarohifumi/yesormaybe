@@ -31,6 +31,7 @@ main .yesorno {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 10%;
   width: 100%;
   height: 100%;
   display: flex;
@@ -49,12 +50,12 @@ main section {
   margin: 0 auto;
   padding: 10vh 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 main section .main_center {
-  width: 65%;
-  height: 100%;
+  width: 50%;
+  height: 90%;
   display: flex;
   flex-direction: column;
 }
@@ -64,7 +65,7 @@ main section .main_center .btn {
   width: 100%;
 }
 main section .main_center .btn img {
-  width: 10%;
+  width: 5%;
   height: auto;
   cursor: pointer;
   padding: 1%;
@@ -77,15 +78,19 @@ main section .main_center .btn span {
   justify-content: center;
   font-size: 1.2em;
 }
-main section .main_left,
-main section .main_right {
-  width: 15%;
-}
 main section .main_left {
-  display: flex;
-  writing-mode: vertical-rl;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
+  text-align: center;
+  width: 50%;
   height: 100%;
+  padding: 10vh 0;
+}
+main section .main_left h2 {
+  font-size: 2em;
+}
+main section .main_left div {
+  font-size: 2em;
+}
+main section .main_left div span {
+  font-size: 1.5em;
 }/*# sourceMappingURL=style.css.map */
