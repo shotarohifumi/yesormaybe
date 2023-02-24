@@ -1,5 +1,5 @@
 $(function () {
-    $(".image").one("click", function () {
+    $(".image").on("click", function () {
 
 
         $.ajax({
@@ -19,9 +19,10 @@ $(function () {
                     // $(".image").append(`<img src=${response.image}  alt="yesorno">`)
                     // $(".image").append(`<p>${response.answer}</p>`)
                     $('.yesorno').css('background-image', `url(${response.image})`);
-                    $(".yesorno").append(`<p>${response.answer}</p>`)
-                    $("p").animate({"fontSize":"30px"},)
-                    $("p").animate({"opacity":"1"},)
+                    $('.yesorno').text(response.answer)
+                    // $(".yesorno").append(`<p>${response.answer}</p>`)
+                    $(".yesorno").animate({"fontSize":"30px"},)
+                    $(".yesorno").animate({"opacity":"1"},)
                     $(".yesorno").append(`<button>${response.answer}</button>`)
 
 
