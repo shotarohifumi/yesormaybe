@@ -2,7 +2,9 @@
     // border: 1px solid rgb(202, 202, 202);
     box-sizing: border-box;
 }
-
+// html {
+// 	scroll-behavior: smooth;
+// }
 .image {
     border: 1px solid black;
     width: 10px;
@@ -54,7 +56,7 @@ main {
     // padding: 10vh 0;
 
     // いぇそるのゾーン
-    .yesorno {
+    .yesorno_s1,.yesorno_s2,.yesorno_s3 {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -190,7 +192,7 @@ main {
             margin-right: 1%;
 
 
-            .btn {
+            .btn-s1,.btn-s2,.btn-s3 {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
