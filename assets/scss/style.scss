@@ -24,8 +24,8 @@ header {
         text-align: center;
         margin: auto;
         span{
-            border: solid #2e2e2e 1px;
-            border-radius: 15px;
+            // border: solid #2e2e2e 1px;
+            // border-radius: 15px;
             font-size: 12px;
         }
     }
@@ -174,14 +174,15 @@ main {
 }
 
 // maybeのページ
-.maybe .off{
-    display: none;
-}
+// .maybe.off{
+//     display: none;
+// }
 .maybe{
     // background-color: black;
     width: 100vw;
     height: 100vh;
     color: rgb(217, 195, 87);
+		z-index: 10;
     .mtext{
         position: absolute;
         white-space: nowrap;

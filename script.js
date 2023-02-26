@@ -24,7 +24,11 @@ $(function () {
                     $(".yesorno").animate({"fontSize":"30px"},)
                     $(".yesorno").animate({"opacity":"1"},)
                     $(".yesorno").append(`<button>${response.answer}</button>`)
-
+										// if (response.answer=="maybe"){
+										// 	$(`<button>${response.answer}</button>`).on("click",function(){
+										// 		$(".maybe").removeClass("off")
+										// 	})
+										// }
 				
 
 

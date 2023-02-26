@@ -24,8 +24,6 @@ header h1 {
   margin: auto;
 }
 header h1 span {
-  border: solid #2e2e2e 1px;
-  border-radius: 15px;
   font-size: 12px;
 }
 
@@ -121,14 +119,11 @@ main section .main_left div span {
   font-size: 1.5em;
 }
 
-.maybe .off {
-  display: none;
-}
-
 .maybe {
   width: 100vw;
   height: 100vh;
   color: rgb(217, 195, 87);
+  z-index: 10;
 }
 .maybe .mtext {
   position: absolute;
