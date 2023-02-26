@@ -17,6 +17,21 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    h1{
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+        span{
+            // border: solid #2e2e2e 1px;
+            // border-radius: 15px;
+            font-size: 12px;
+        }
+    }
+    // justify-content: space-around;
+    // text-align: center;
+
 }
 
 footer {
@@ -163,5 +178,85 @@ main {
         }
     }
 
+
+}
+
+// maybeのページ
+// .maybe.off{
+//     display: none;
+// }
+.maybe{
+    // background-color: black;
+    width: 100vw;
+    height: 100vh;
+    color: rgb(217, 195, 87);
+		z-index: 10;
+    .mtext{
+        position: absolute;
+        white-space: nowrap;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto 0;
+        text-align: center;
+        margin: 0 auto;
+        h1{
+            animation: flowing-anim 5s 1;
+            overflow: hidden;
+            font-size: 4rem;
+						font-weight: bold;
+						-webkit-text-stroke: 1px white;
+        }
+        @keyframes flowing-anim {
+            0%{
+                width: 0%;
+            }  
+            100%{
+                width: 100%;
+            }          
+        }
+    }
+    .subtext{
+        position: absolute;
+        white-space: nowrap;
+        bottom: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto 0;
+        text-align: center;
+        margin: 0 auto;
+        .sub_flow{
+            width: 0;
+            overflow: hidden;
+            font-size: 1.5rem;
+            animation: flowing-anim 5s forwards 1;
+            animation-delay: 3s;
+            // span{
+            // display: block;
+            // }
+            &:nth-child(2){
+                overflow: hidden;
+                animation-delay: 6s;
+            }
+        }
+        
+    }
+    .footer{
+        position: absolute;
+        bottom: -50px;
+        right: 50px;
+        font-size: 1.2rem;
+        animation: bound-anim 1s infinite;
+        animation-delay: 10s;
+        animation-fill-mode: forwards;
+        }
+    @keyframes bound-anim{
+        0%, 100%{
+            bottom: 15%;
+         }
+        30%, 60% {
+            bottom: 10%; 
+        }
+    }
 
 }
