@@ -126,10 +126,9 @@ main section .main_left div span {
 }
 
 .maybe {
-  background-color: black;
   width: 100vw;
   height: 100vh;
-  color: white;
+  color: rgb(217, 195, 87);
 }
 .maybe .mtext {
   position: absolute;
@@ -145,6 +144,8 @@ main section .main_left div span {
   animation: flowing-anim 5s 1;
   overflow: hidden;
   font-size: 4rem;
+  font-weight: bold;
+  -webkit-text-stroke: 1px white;
 }
 @keyframes flowing-anim {
   0% {
