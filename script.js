@@ -24,11 +24,26 @@ $(function () {
                     // $(".yesorno").append(`<p>${response.answer}</p>`)
                     $(".yesorno").animate({"fontSize":"50px"},2000)
                     $(".yesorno").animate({"opacity":"1"},)
+                    $('.yesorno-a').css({"backgroundColor":"white"})
                     // $(".yesorno").append(`<button>${response.answer}</button>`)
                     
                     //右側のなんかする？を消す
                     $('.btn-text').remove()
                     $('.btn.q').remove()
+
+                    // yes　or no のanswerに対してのクリックイベントを開催
+                    $('.yesorno-a').on("mouseover",function () {
+                        $('.yesorno-a').css({"cursor":"pointer"})
+                        // $('.yesorno-a').css({"backgroundColor":"white"})
+
+                        $('.yesorno-a').on("click",function () {
+                            // $(`.${response.answer}`).addClass("on")
+                            $(this).siblings(`.${response.answer}`).addClass("on")
+                            $('.yesorno-a').remove()
+
+                        })
+
+                    })
 				
 
 
