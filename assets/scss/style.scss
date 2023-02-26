@@ -49,12 +49,15 @@ main {
         margin-right: 10%;
 
         // イエスかノーの文字
-        font-size: 120px;
+        font-size: 500px;
         color: white;
         opacity: 0.5;
         margin: 0 auto;
         text-align: center;
+        
 
+
+        //右側のなんかする？の部分
         h2 {
             color: black;
             font-size: 0.2em;
@@ -62,10 +65,15 @@ main {
         }
 
 
-        .btn.text {
+        .btn-q {
             width: 5%;
             cursor: pointer;
             border-radius: 0;
+
+        }
+
+        .btn-text {
+            font-size: 30px;
         }
 
 

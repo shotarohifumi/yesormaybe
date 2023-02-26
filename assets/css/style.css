@@ -37,7 +37,7 @@ main .yesorno {
   justify-content: center;
   align-items: center;
   margin-right: 10%;
-  font-size: 120px;
+  font-size: 500px;
   color: white;
   opacity: 0.5;
   margin: 0 auto;
@@ -48,10 +48,13 @@ main .yesorno h2 {
   font-size: 0.2em;
   opacity: 1;
 }
-main .yesorno .btn.text {
+main .yesorno .btn-q {
   width: 5%;
   cursor: pointer;
   border-radius: 0;
+}
+main .yesorno .btn-text {
+  font-size: 30px;
 }
 main section {
   width: 95%;
