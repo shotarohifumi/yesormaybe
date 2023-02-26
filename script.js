@@ -22,13 +22,13 @@ $(function () {
                     $('.yesorno').css('background-image', `url(${response.image})`);
                     $('.yesorno-a').text(response.answer)
                     // $(".yesorno").append(`<p>${response.answer}</p>`)
-                    $(".yesorno").animate({"fontSize":"50px"},)
+                    $(".yesorno").animate({"fontSize":"50px"},2000)
                     $(".yesorno").animate({"opacity":"1"},)
                     // $(".yesorno").append(`<button>${response.answer}</button>`)
                     
                     //右側のなんかする？を消す
                     $('.btn-text').remove()
-                    $('.btn-q').remove()
+                    $('.btn.q').remove()
 				
 
 

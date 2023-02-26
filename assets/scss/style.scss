@@ -18,17 +18,20 @@ header {
     top: 0;
     left: 0;
     display: flex;
-    h1{
+
+    h1 {
         font-size: 2rem;
         font-weight: bold;
         text-align: center;
         margin: auto;
-        span{
+
+        span {
             // border: solid #2e2e2e 1px;
             // border-radius: 15px;
             font-size: 12px;
         }
     }
+
     // justify-content: space-around;
     // text-align: center;
 
@@ -55,7 +58,7 @@ main {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        border-radius: 10%;
+        border-radius: 25px;
         width: 100%;
         height: 100%;
         display: flex;
@@ -64,12 +67,12 @@ main {
         margin-right: 10%;
 
         // イエスかノーの文字
-        font-size: 500px;
+        font-size: 300px;
         color: white;
         opacity: 0.5;
         margin: 0 auto;
         text-align: center;
-        
+
 
 
         //右側のなんかする？の部分
@@ -80,7 +83,7 @@ main {
         }
 
 
-        .btn-q {
+        .btn.q {
             width: 5%;
             cursor: pointer;
             border-radius: 0;
@@ -89,6 +92,55 @@ main {
 
         .btn-text {
             font-size: 30px;
+        }
+
+        // イエスが出たとき
+        .yes {
+            display: none;
+
+            &.on {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5%;
+                color: black;
+                font-size: 1.5rem;
+                opacity: 1;
+                text-align: center;
+                margin: 0 auto;
+                width: 100%;
+                height: 100%;
+
+                // background-image:url(https://placehold.jp/200x100.png) ;
+                a {
+
+                    // width: 80%;
+                    width: 50%;
+                    height: 50%;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+            }
+
+        }
+
+        // noがでたとき
+        .no{
+            font-size: 1.5rem;
+            color: black;
+            button{
+                margin: 10px;
+                background-color:#FFC107 ;
+                padding: 10px 15px;
+                border-radius:25% ;
+                box-shadow: 5px 8px;
+                cursor: pointer;
+            }
         }
 
 
@@ -185,13 +237,14 @@ main {
 // .maybe.off{
 //     display: none;
 // }
-.maybe{
+.maybe {
     // background-color: black;
     width: 100vw;
     height: 100vh;
     color: rgb(217, 195, 87);
-		z-index: 10;
-    .mtext{
+    z-index: 10;
+
+    .mtext {
         position: absolute;
         white-space: nowrap;
         top: 40%;
@@ -200,23 +253,27 @@ main {
         margin: auto 0;
         text-align: center;
         margin: 0 auto;
-        h1{
+
+        h1 {
             animation: flowing-anim 5s 1;
             overflow: hidden;
             font-size: 4rem;
-						font-weight: bold;
-						-webkit-text-stroke: 1px white;
+            font-weight: bold;
+            -webkit-text-stroke: 1px white;
         }
+
         @keyframes flowing-anim {
-            0%{
+            0% {
                 width: 0%;
-            }  
-            100%{
+            }
+
+            100% {
                 width: 100%;
-            }          
+            }
         }
     }
-    .subtext{
+
+    .subtext {
         position: absolute;
         white-space: nowrap;
         bottom: 18%;
@@ -225,23 +282,26 @@ main {
         margin: auto 0;
         text-align: center;
         margin: 0 auto;
-        .sub_flow{
+
+        .sub_flow {
             width: 0;
             overflow: hidden;
             font-size: 1.5rem;
             animation: flowing-anim 5s forwards 1;
             animation-delay: 3s;
+
             // span{
             // display: block;
             // }
-            &:nth-child(2){
+            &:nth-child(2) {
                 overflow: hidden;
                 animation-delay: 6s;
             }
         }
-        
+
     }
-    .footer{
+
+    .footer {
         position: absolute;
         bottom: -50px;
         right: 50px;
@@ -249,13 +309,18 @@ main {
         animation: bound-anim 1s infinite;
         animation-delay: 10s;
         animation-fill-mode: forwards;
-        }
-    @keyframes bound-anim{
-        0%, 100%{
+    }
+
+    @keyframes bound-anim {
+
+        0%,
+        100% {
             bottom: 15%;
-         }
-        30%, 60% {
-            bottom: 10%; 
+        }
+
+        30%,
+        60% {
+            bottom: 10%;
         }
     }
 
