@@ -1,5 +1,7 @@
 $(function () {
     $(".btn-s1").on("click", function () {
+        let position = $('#s2').offset().top;
+        $("html,body").animate({scrollTop:position},2000);
 
         $.ajax({
             url: 'https://yesno.wtf/api', //アクセスするURL
