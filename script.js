@@ -20,11 +20,11 @@ $(function () {
                     // イエスかノーの画像流れる
                     
                     $('.yesorno_s1').css('background-image', `url(${response.image})`);
-                    $('.yesorno-a').text(response.answer)
+                    $('.yesorno-a-s1').text(response.answer)
                     // $(".yesorno").append(`<p>${response.answer}</p>`)
                     $(".yesorno_s1").animate({"fontSize":"50px"},2000)
                     $(".yesorno_s1").animate({"opacity":"1"},)
-                    $('.yesorno-a').css({"backgroundColor":"white"})
+                    $('.yesorno-a-s1').css({"backgroundColor":"white"})
                     // $(".yesorno").append(`<button>${response.answer}</button>`)
                     
                     //右側のなんかする？を消す
@@ -32,14 +32,14 @@ $(function () {
                     $('.btn.q').remove()
 
                     // yes　or no のanswerに対してのクリックイベントを開催
-                    $('.yesorno-a').on("mouseover",function () {
-                        $('.yesorno-a').css({"cursor":"pointer"})
+                    $('.yesorno-a-s1').on("mouseover",function () {
+                        $('.yesorno-a-s1').css({"cursor":"pointer"})
                         // $('.yesorno-a').css({"backgroundColor":"white"})
 
-                        $('.yesorno-a').on("click",function () {
+                        $('.yesorno-a-s1').on("click",function () {
                             // $(`.${response.answer}`).addClass("on")
                             $(this).siblings(`.${response.answer}`).addClass("on")
-                            $('.yesorno-a').remove()
+                            $('.yesorno-a-s1').remove()
 
                             
 
@@ -88,11 +88,11 @@ $(function () {
                     // イエスかノーの画像流れる
                     
                     $('.yesorno_s2').css('background-image', `url(${response.image})`);
-                    $('.yesorno-a').text(response.answer)
+                    $('.yesorno-a-s2').text(response.answer)
                     // $(".yesorno").append(`<p>${response.answer}</p>`)
                     $(".yesorno_s2").animate({"fontSize":"50px"},2000)
                     $(".yesorno_s2").animate({"opacity":"1"},)
-                    $('.yesorno-a').css({"backgroundColor":"white"})
+                    $('.yesorno-a-s2').css({"backgroundColor":"white"})
                     // $(".yesorno").append(`<button>${response.answer}</button>`)
                     
                     //右側のなんかする？を消す
@@ -100,14 +100,14 @@ $(function () {
                     $('.btn.q').remove()
 
                     // yes　or no のanswerに対してのクリックイベントを開催
-                    $('.yesorno-a').on("mouseover",function () {
-                        $('.yesorno-a').css({"cursor":"pointer"})
-                        // $('.yesorno-a').css({"backgroundColor":"white"})
+                    $('.yesorno-a-s2').on("mouseover",function () {
+                        $('.yesorno-a-s2').css({"cursor":"pointer"})
+                        // $('.yesorno-a-s2').css({"backgroundColor":"white"})
 
-                        $('.yesorno-a').on("click",function () {
+                        $('.yesorno-a-s2').on("click",function () {
                             // $(`.${response.answer}`).addClass("on")
                             $(this).siblings(`.${response.answer}`).addClass("on")
-                            $('.yesorno-a').remove()
+                            $('.yesorno-a-s2').remove()
 
                             
 
@@ -156,11 +156,11 @@ $(function () {
                     // イエスかノーの画像流れる
                     
                     $('.yesorno_s3').css('background-image', `url(${response.image})`);
-                    $('.yesorno-a').text(response.answer)
+                    $('.yesorno-a-s3').text(response.answer)
                     // $(".yesorno").append(`<p>${response.answer}</p>`)
                     $(".yesorno_s3").animate({"fontSize":"50px"},2000)
                     $(".yesorno_s3").animate({"opacity":"1"},)
-                    $('.yesorno-a').css({"backgroundColor":"white"})
+                    $('.yesorno-a-s3').css({"backgroundColor":"white"})
                     // $(".yesorno").append(`<button>${response.answer}</button>`)
                     
                     //右側のなんかする？を消す
@@ -168,14 +168,14 @@ $(function () {
                     $('.btn.q').remove()
 
                     // yes　or no のanswerに対してのクリックイベントを開催
-                    $('.yesorno-a').on("mouseover",function () {
-                        $('.yesorno-a').css({"cursor":"pointer"})
-                        // $('.yesorno-a').css({"backgroundColor":"white"})
+                    $('.yesorno-a-s3').on("mouseover",function () {
+                        $('.yesorno-a-s3').css({"cursor":"pointer"})
+                        // $('.yesorno-a-s3').css({"backgroundColor":"white"})
 
-                        $('.yesorno-a').on("click",function () {
+                        $('.yesorno-a-s3').on("click",function () {
                             // $(`.${response.answer}`).addClass("on")
                             $(this).siblings(`.${response.answer}`).addClass("on")
-                            $('.yesorno-a').remove()
+                            $('.yesorno-a-s3').remove()
 
                             
 
