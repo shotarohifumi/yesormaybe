@@ -2,6 +2,7 @@
     // border: 1px solid rgb(202, 202, 202);
     box-sizing: border-box;
 }
+
 // html {
 // 	scroll-behavior: smooth;
 // }
@@ -40,6 +41,7 @@ header {
 }
 
 footer {
+		padding-top: 3px;
     height: 10vh;
     width: 100%;
     background-color: #FF5722;
@@ -49,7 +51,7 @@ footer {
     left: 0;
 		display: flex;
 		flex-direction: column;
-		gap: 5px;
+		gap: 3px;
 		.fin{
 			font-size: 1rem;
 			display: flex;
@@ -65,12 +67,35 @@ footer {
 }
 
 main {
+
     // width: 100%;
     // height: 80vh;
     // padding: 10vh 0;
+    // ワープゾーン
+    .warp {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 113vh;
+        margin: 0 auto;
+        text-align: center;
+        span {
+            display: block;
+            writing-mode: vertical-rl;
+            letter-spacing: 0.3em;
+            font-size: 2em;
+            
+        }
+        .warp_s2{
+            letter-spacing: 1em;
+        }
+
+    }
 
     // いぇそるのゾーン
-    .yesorno_s1,.yesorno_s2,.yesorno_s3 {
+    .yesorno_s1,
+    .yesorno_s2,
+    .yesorno_s3 {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -84,7 +109,7 @@ main {
 
         // イエスかノーの文字
         font-size: 300px;
-        color:black;
+        color: black;
         opacity: 0.5;
         margin: 0 auto;
         text-align: center;
@@ -110,7 +135,7 @@ main {
             font-size: 30px;
         }
 
-         
+
 
         // イエスが出たとき
         .yes {
@@ -128,8 +153,8 @@ main {
                 margin: 0 auto;
                 width: 100%;
                 height: 100%;
-                background-color: rgb(246, 246, 246,1);
-                
+                background-color: rgb(246, 246, 246, 1);
+
 
                 // background-image:url(https://placehold.jp/200x100.png) ;
                 a {
@@ -160,11 +185,11 @@ main {
                 justify-content: center;
                 font-size: 1.5rem;
                 color: black;
-                background-color: rgb(246, 246, 246,0.8);
+                background-color: rgb(246, 246, 246, 0.8);
                 width: 100%;
                 height: 100%;
-               
-                .neru{
+
+                .neru {
                     width: auto;
                     height: 50%;
                 }
@@ -181,8 +206,10 @@ main {
                 }
             }
         }
-        .maybe{
+
+        .maybe {
             display: none;
+
             &.on {
                 display: flex;
                 flex-direction: column;
@@ -190,9 +217,10 @@ main {
                 justify-content: center;
                 font-size: 1.5rem;
                 color: black;
-                background-color: rgb(246, 246, 246,0.8);
+                background-color: rgb(246, 246, 246, 0.8);
                 width: 100%;
                 height: 100%;
+
                 a {
                     display: block;
                     margin: 10px;
@@ -234,7 +262,9 @@ main {
             margin-right: 1%;
 
 
-            .btn-s1,.btn-s2,.btn-s3 {
+            .btn-s1,
+            .btn-s2,
+            .btn-s3 {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
@@ -295,18 +325,18 @@ main {
         }
     }
 
- #s2{
-    .main_left{
-    background-color:#f3f2f2 ;
-    border-radius: 25px;
-    padding: auto 10px;
+    #s2 {
+        .main_left {
+            background-color: #f3f2f2;
+            border-radius: 25px;
+            padding: auto 10px;
+        }
+
     }
-    
- }
 }
 
 // maybeのページ
-.maybe{
+.maybe {
     // display: none;
     // background-color: black;
     width: 100vw;

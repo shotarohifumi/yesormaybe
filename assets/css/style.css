@@ -28,6 +28,7 @@ header h1 span {
 }
 
 footer {
+  padding-top: 3px;
   height: 10vh;
   width: 100%;
   background-color: #FF5722;
@@ -36,7 +37,7 @@ footer {
   left: 0;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 3px;
 }
 footer .fin {
   font-size: 1rem;
@@ -50,7 +51,26 @@ footer .fin_btm {
   justify-content: right;
 }
 
-main .yesorno_s1, main .yesorno_s2, main .yesorno_s3 {
+main .warp {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 113vh;
+  margin: 0 auto;
+  text-align: center;
+}
+main .warp span {
+  display: block;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.3em;
+  font-size: 2em;
+}
+main .warp .warp_s2 {
+  letter-spacing: 1em;
+}
+main .yesorno_s1,
+main .yesorno_s2,
+main .yesorno_s3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -67,23 +87,33 @@ main .yesorno_s1, main .yesorno_s2, main .yesorno_s3 {
   margin: 0 auto;
   text-align: center;
 }
-main .yesorno_s1 h2, main .yesorno_s2 h2, main .yesorno_s3 h2 {
+main .yesorno_s1 h2,
+main .yesorno_s2 h2,
+main .yesorno_s3 h2 {
   color: black;
   font-size: 0.2em;
   opacity: 1;
 }
-main .yesorno_s1 .btn.q, main .yesorno_s2 .btn.q, main .yesorno_s3 .btn.q {
+main .yesorno_s1 .btn.q,
+main .yesorno_s2 .btn.q,
+main .yesorno_s3 .btn.q {
   width: 5%;
   cursor: pointer;
   border-radius: 0;
 }
-main .yesorno_s1 .btn-text, main .yesorno_s2 .btn-text, main .yesorno_s3 .btn-text {
+main .yesorno_s1 .btn-text,
+main .yesorno_s2 .btn-text,
+main .yesorno_s3 .btn-text {
   font-size: 30px;
 }
-main .yesorno_s1 .yes, main .yesorno_s2 .yes, main .yesorno_s3 .yes {
+main .yesorno_s1 .yes,
+main .yesorno_s2 .yes,
+main .yesorno_s3 .yes {
   display: none;
 }
-main .yesorno_s1 .yes.on, main .yesorno_s2 .yes.on, main .yesorno_s3 .yes.on {
+main .yesorno_s1 .yes.on,
+main .yesorno_s2 .yes.on,
+main .yesorno_s3 .yes.on {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,19 +127,27 @@ main .yesorno_s1 .yes.on, main .yesorno_s2 .yes.on, main .yesorno_s3 .yes.on {
   height: 100%;
   background-color: rgb(246, 246, 246);
 }
-main .yesorno_s1 .yes.on a, main .yesorno_s2 .yes.on a, main .yesorno_s3 .yes.on a {
+main .yesorno_s1 .yes.on a,
+main .yesorno_s2 .yes.on a,
+main .yesorno_s3 .yes.on a {
   width: 50%;
   height: 50%;
   cursor: pointer;
 }
-main .yesorno_s1 .yes.on a img, main .yesorno_s2 .yes.on a img, main .yesorno_s3 .yes.on a img {
+main .yesorno_s1 .yes.on a img,
+main .yesorno_s2 .yes.on a img,
+main .yesorno_s3 .yes.on a img {
   width: auto;
   height: 100%;
 }
-main .yesorno_s1 .no, main .yesorno_s2 .no, main .yesorno_s3 .no {
+main .yesorno_s1 .no,
+main .yesorno_s2 .no,
+main .yesorno_s3 .no {
   display: none;
 }
-main .yesorno_s1 .no.on, main .yesorno_s2 .no.on, main .yesorno_s3 .no.on {
+main .yesorno_s1 .no.on,
+main .yesorno_s2 .no.on,
+main .yesorno_s3 .no.on {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,11 +158,15 @@ main .yesorno_s1 .no.on, main .yesorno_s2 .no.on, main .yesorno_s3 .no.on {
   width: 100%;
   height: 100%;
 }
-main .yesorno_s1 .no.on .neru, main .yesorno_s2 .no.on .neru, main .yesorno_s3 .no.on .neru {
+main .yesorno_s1 .no.on .neru,
+main .yesorno_s2 .no.on .neru,
+main .yesorno_s3 .no.on .neru {
   width: auto;
   height: 50%;
 }
-main .yesorno_s1 .no.on a, main .yesorno_s2 .no.on a, main .yesorno_s3 .no.on a {
+main .yesorno_s1 .no.on a,
+main .yesorno_s2 .no.on a,
+main .yesorno_s3 .no.on a {
   display: block;
   margin: 10px;
   background-color: #FFC107;
@@ -134,10 +176,14 @@ main .yesorno_s1 .no.on a, main .yesorno_s2 .no.on a, main .yesorno_s3 .no.on a 
   box-shadow: 5px 8px;
   cursor: pointer;
 }
-main .yesorno_s1 .maybe, main .yesorno_s2 .maybe, main .yesorno_s3 .maybe {
+main .yesorno_s1 .maybe,
+main .yesorno_s2 .maybe,
+main .yesorno_s3 .maybe {
   display: none;
 }
-main .yesorno_s1 .maybe.on, main .yesorno_s2 .maybe.on, main .yesorno_s3 .maybe.on {
+main .yesorno_s1 .maybe.on,
+main .yesorno_s2 .maybe.on,
+main .yesorno_s3 .maybe.on {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,7 +194,9 @@ main .yesorno_s1 .maybe.on, main .yesorno_s2 .maybe.on, main .yesorno_s3 .maybe.
   width: 100%;
   height: 100%;
 }
-main .yesorno_s1 .maybe.on a, main .yesorno_s2 .maybe.on a, main .yesorno_s3 .maybe.on a {
+main .yesorno_s1 .maybe.on a,
+main .yesorno_s2 .maybe.on a,
+main .yesorno_s3 .maybe.on a {
   display: block;
   margin: 10px;
   background-color: #FFC107;
@@ -174,12 +222,18 @@ main section .main_center {
   flex-direction: column;
   margin-right: 1%;
 }
-main section .main_center .btn-s1, main section .main_center .btn-s2, main section .main_center .btn-s3 {
+main section .main_center .btn-s1,
+main section .main_center .btn-s2,
+main section .main_center .btn-s3 {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-main section .main_center .btn-s1 img, main section .main_center .btn-s1 #btn_maybe, main section .main_center .btn-s2 img, main section .main_center .btn-s2 #btn_maybe, main section .main_center .btn-s3 img, main section .main_center .btn-s3 #btn_maybe {
+main section .main_center .btn-s1 img, main section .main_center .btn-s1 #btn_maybe,
+main section .main_center .btn-s2 img,
+main section .main_center .btn-s2 #btn_maybe,
+main section .main_center .btn-s3 img,
+main section .main_center .btn-s3 #btn_maybe {
   width: 6%;
   height: auto;
   cursor: pointer;
@@ -189,7 +243,9 @@ main section .main_center .btn-s1 img, main section .main_center .btn-s1 #btn_ma
   border-radius: 50%;
   box-shadow: 5px 5px 5px rgb(203, 203, 203);
 }
-main section .main_center .btn-s1 span, main section .main_center .btn-s2 span, main section .main_center .btn-s3 span {
+main section .main_center .btn-s1 span,
+main section .main_center .btn-s2 span,
+main section .main_center .btn-s3 span {
   display: flex;
   width: 20%;
   height: 100%;
