@@ -126,7 +126,7 @@ main {
                     cursor: pointer;
 
                     img {
-                        width: 100%;
+                        width: auto;
                         height: 100%;
                     }
 
@@ -155,6 +155,30 @@ main {
                     height: 50%;
                 }
 
+                a {
+                    display: block;
+                    margin: 10px;
+                    background-color: #FFC107;
+                    padding: 10px 15px;
+                    border-radius: 25%;
+                    width: 100px;
+                    box-shadow: 5px 8px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .maybe{
+            display: none;
+            &.on {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+                color: black;
+                background-color: rgb(246, 246, 246,0.8);
+                width: 100%;
+                height: 100%;
                 a {
                     display: block;
                     margin: 10px;
