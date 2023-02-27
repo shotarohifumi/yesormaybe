@@ -1,0 +1,76 @@
+/* maybeのページ  */
+.maybe {
+  width: 100vw;
+  height: 100vh;
+  color: rgb(217, 195, 87);
+  z-index: 10;
+}
+/* maybeのページ  */
+.maybe .mtext {
+  position: absolute;
+  white-space: nowrap;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto 0;
+  text-align: center;
+  margin: 0 auto;
+}
+/* maybeのページ  */
+.maybe .mtext h1 {
+  animation: flowing-anim 5s 1;
+  overflow: hidden;
+  font-size: 4rem;
+  font-weight: bold;
+  -webkit-text-stroke: 1px white;
+}
+@keyframes flowing-anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/* maybeのページ  */
+.maybe .subtext {
+  position: absolute;
+  white-space: nowrap;
+  bottom: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto 0;
+  text-align: center;
+  margin: 0 auto;
+}
+/* maybeのページ  */
+.maybe .subtext .sub_flow {
+  width: 0;
+  overflow: hidden;
+  font-size: 1.5rem;
+  animation: flowing-anim 5s forwards 1;
+  animation-delay: 3s;
+}
+/* maybeのページ  */
+.maybe .subtext .sub_flow:nth-child(2) {
+  overflow: hidden;
+  animation-delay: 6s;
+}
+/* maybeのページ  */
+.maybe .footer {
+  position: absolute;
+  bottom: -50px;
+  right: 50px;
+  font-size: 1.2rem;
+  animation: bound-anim 1s infinite;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+}
+@keyframes bound-anim {
+  0%, 100% {
+    bottom: 15%;
+  }
+  30%, 60% {
+    bottom: 10%;
+  }
+}
