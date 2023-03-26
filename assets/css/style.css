@@ -27,6 +27,14 @@ header h1 span {
   font-size: 12px;
 }
 
+@media screen and (max-width: 767px) {
+  header {
+    position: unset;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
 footer {
   padding-top: 3px;
   height: 10vh;
@@ -51,6 +59,11 @@ footer .fin_btm {
   justify-content: right;
 }
 
+@media screen and (max-width: 767px) {
+  footer {
+    position: unset;
+  }
+}
 main .warp {
   display: flex;
   justify-content: center;
