@@ -65,6 +65,11 @@ footer {
 @media screen and (max-width:767px) {
 	footer{
 		position: unset;
+		height: auto;
+		margin-top: 15px;
+		.fin, .fin_btm{
+			font-size: 0.8rem;
+		}
 	}
 }
 
@@ -338,8 +343,28 @@ main {
     }
 }
 @media screen and (max-width:767px){
-
+	main {
+		section{
+			width: 100%;
+			padding: 0;
+			display: block;
+			height: auto;
+			.main_left{
+				width: 100%;
+				height: auto;
+				padding: 10vh 0;
+			}
+			.main_center{
+				height: 50vh;
+				width: 100%;
+			}
+		}
+		.warp{
+			height: 90vh;
+		}
+	}
 }
+
 
 // maybeのページ
 .maybe {

@@ -62,6 +62,11 @@ footer .fin_btm {
 @media screen and (max-width: 767px) {
   footer {
     position: unset;
+    height: auto;
+    margin-top: 15px;
+  }
+  footer .fin, footer .fin_btm {
+    font-size: 0.8rem;
   }
 }
 main .warp {
@@ -288,6 +293,26 @@ main #s2 .main_left {
   padding: auto 10px;
 }
 
+@media screen and (max-width: 767px) {
+  main section {
+    width: 100%;
+    padding: 0;
+    display: block;
+    height: auto;
+  }
+  main section .main_left {
+    width: 100%;
+    height: auto;
+    padding: 10vh 0;
+  }
+  main section .main_center {
+    height: 50vh;
+    width: 100%;
+  }
+  main .warp {
+    height: 90vh;
+  }
+}
 .maybe {
   width: 100vw;
   height: 100vh;
